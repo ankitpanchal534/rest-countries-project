@@ -3,8 +3,8 @@ import BackButton from "../common/BackButton";
 export default function CountryDetails({ countryData }: any) {
   // const {}
   return (
-    <div className="w-full p-6 md:p-10 ">
-      <div className="mb-14 mt-7 w-full">
+    <div className="w-full p-6 md:p-10 dark:bg-verydarkBlueText ">
+      <div className="mb-14 mt-7 w-full flex justify-start">
         <BackButton />
       </div>
       <div className="w-full flex flex-wrap items-start">
