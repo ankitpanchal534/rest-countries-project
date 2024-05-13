@@ -2,7 +2,6 @@
 import CountryDetails from "@/_components/country-detail/CountryDetails";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { LuLoader2 } from "react-icons/lu";
 
 async function getCountryData(country_name: string) {
   try {
@@ -35,6 +34,11 @@ export default function Page() {
     });
   }, []);
 
-  if (isLoading) return <LuLoader2 />;
+  if (isLoading)
+    return (
+      <div className="h-dvh w-full flex justify-center items-center text-xl">
+        Loading...
+      </div>
+    );
   return <CountryDetails countryData={countryData} />;
 }
