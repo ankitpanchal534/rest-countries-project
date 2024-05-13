@@ -23,7 +23,7 @@ export default function CountryCard(
           />
         </div>
         <div className="p-3 px-4 ">
-          <h3 className="font-medium text-lg text-wrap ">{name}</h3>
+          <h3 className="font-semibold text-lg text-wrap ">{name}</h3>
         </div>
         <div className="px-4 flex gap-1">
           <h3 className="font-medium">Population:</h3>
